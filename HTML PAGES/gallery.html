@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100SMILES Dental Care - Gallery</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="HeadName">100SMILES Dental Care</h1>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="book.html">Appointment</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="gallery">
+      <h2>Clinic Gallery</h2>
+      <div class="gallery-grid">
+        <img src="images/clinic1.jpg" alt="Clinic Image 1" />
+        <img src="images/clinic2.jpg" alt="Clinic Image 2" />
+        <img src="images/clinic3.jpg" alt="Clinic Image 3" />
+        <img src="images/clinic4.jpg" alt="Clinic Image 4" />
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 100SMILES Dental Care. All rights reserved.</p>
+      <!-- Footer Navigation -->
+      <ul class="footer-nav">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </footer>
+
+    <!-- js for three dot toggle -->
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navMenu");
+
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

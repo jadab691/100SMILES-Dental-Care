@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100SMILES Dental Care - Our Team</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="HeadName">100SMILES Dental Care</h1>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="book.html">Appointment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="team">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="member">
+          <img src="../STAFF_IMAGES/Dr. Johanna Grey .png" alt="Dr. Johanna Grey" />
+          <h3>Dr. Johanna Grey</h3>
+          <p>DDS, Orthodontics – Providing top-tier orthodontic care.</p>
+        </div>
+        <div class="member">
+          <img src=",./STAFF_IMAGES/Dr. Emily Carter.jpeg" alt="Dr. Emily Carter" />
+          <h3>Dr. Emily Carter</h3>
+          <p>
+            Pediatric Dentist – Gentle, caring, specialized care for children.
+          </p>
+        </div>
+        <div class="member">
+          <img src="../STAFF_IMAGES/Dr Benedict Sloan.png" alt="Dr. Benedict Sloan" />
+          <h3>Dr. Benedict Sloan</h3>
+          <p>DMD – Experienced dentist committed to overall dental health.</p>
+        </div>
+        <div class="member">
+          <img src="../STAFF_IMAGES/Richard Attam.jpeg" alt="Richard Attam" />
+          <h3>Richard Attam</h3>
+          <p>Dental Hygienist – Ensuring oral hygiene and patient comfort.</p>
+        </div>
+        <div class="member">
+          <img src="../STAFF_IMAGES/April Kepner.jpg" alt="April Kepner" />
+          <h3>April Kepner</h3>
+          <p>Receptionist – Friendly assistance with bookings and enquiries.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 100SMILES Dental Care. All rights reserved.</p>
+      <p>Email: admin@100smilesdentalcare.com.au | Phone: 07 5000 5599</p>
+      <!-- Footer Navigation -->
+      <ul class="footer-nav">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </footer>
+
+    <!-- js for three dot toggle -->
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navMenu");
+
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
