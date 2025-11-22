@@ -8,7 +8,6 @@
   </head>
   <body>
     <!-- Header -->
-
     <header>
       <h1 class="HeadName">100SMILES Dental Care</h1>
 
@@ -21,12 +20,13 @@
       <!-- Navigation Menu -->
       <nav>
         <ul id="navMenu">
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="staff.html">Staff</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
+          <!-- <li><a href="gallery.html">Gallery</a></li> -->
           <li><a href="announcements.html">Announcements</a></li>
           <li><a href="book.html">Appointment</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
         </ul>
       </nav>
     </header>
@@ -34,11 +34,14 @@
     <!-- About Section -->
     <section class="about">
       <h2>About 100SMILES Dental Care</h2>
+      <div class="image-con">
+        <img src="../IMAGES/AdobeStock_370177584.jpeg" alt="Clinic Exterior" />
+      </div>
       <p>
-        Located at 33 Fantail St. in Razole, we have been serving the community
-        for over three decades. With more than 50 years of combined experience,
-        our clinic provides friendly, reliable, and compassionate dental care
-        for patients of all ages.
+        Located at 33 Fantail St., Razole, 100SMILES Dental Care has been
+        serving the community for over three decades. With more than 50 years of
+        combined experience, our clinic provides friendly, reliable, and
+        compassionate dental care for patients of all ages.
       </p>
       <p>
         We offer a comprehensive range of services, from routine check-ups and
@@ -47,40 +50,51 @@
         ensuring a positive experience for everyone.
       </p>
       <p>
-        Now, we offer a new <strong>online booking system</strong> for
-        convenient appointment scheduling and a
-        <strong>free trial dental checkup</strong> for our valued clients.
+        Try our <strong>online booking system</strong> for easy appointment
+        scheduling and enjoy a <strong>free trial dental checkup</strong> for
+        first-time clients!
       </p>
+      <a href="book.html" class="btn">Book Your Free Checkup</a>
     </section>
 
-    <!-- New Technologies Section -->
-    <section class="technologies">
-      <h2>Our New Dental Technologies</h2>
+    <!-- Dental Technology Section -->
+    <section class="tech-highlights">
+      <h2>Our Dental Technology</h2>
+      <div class="tech-grid">
+        <div class="tech-item">
+          <img src="../IMAGES/AdobeStock_411728191.jpeg" alt="X-Ray" />
+          <h3>Digital X-Rays</h3>
+          <p>
+            High-resolution images with minimal radiation for accurate
+            diagnosis.
+          </p>
+        </div>
+        <div class="tech-item">
+          <img src="../IMAGES/AdobeStock_262111000.jpeg" alt="Teeth Cleaning" />
+          <h3>Teeth Cleaning & Care</h3>
+          <p>Comprehensive preventive care for a healthy and bright smile.</p>
+        </div>
+        <div class="tech-item">
+          <img
+            src="../IMAGES/AdobeStock_297288948.jpeg"
+            alt="Advanced Dental Tech"
+          />
+          <h3>Advanced Dental Tech</h3>
+          <p>
+            Laser dentistry, CAD/CAM, 3D printing, and tele-dentistry solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- History / Timeline -->
+    <section class="history">
+      <h2>Our Journey</h2>
       <ul>
-        <li>
-          <strong>Digital X-Rays:</strong> High-resolution images with minimal
-          radiation.
-        </li>
-        <li>
-          <strong>Intraoral Cameras:</strong> Detailed images to detect problems
-          early.
-        </li>
-        <li>
-          <strong>Laser Dentistry:</strong> Minimally invasive treatments with
-          faster healing.
-        </li>
-        <li>
-          <strong>CAD/CAM Technology:</strong> Precise dental restorations in a
-          single visit.
-        </li>
-        <li>
-          <strong>3D Printing:</strong> Accurate models, surgical guides, and
-          custom appliances.
-        </li>
-        <li>
-          <strong>Teledentistry:</strong> Virtual consultations from the comfort
-          of your home.
-        </li>
+        <li><strong>1990:</strong> Clinic Established</li>
+        <li><strong>2000:</strong> Expanded to Advanced Orthodontics</li>
+        <li><strong>2010:</strong> Introduced Cosmetic Dentistry Services</li>
+        <li><strong>2023:</strong> Launched Online Booking System</li>
       </ul>
     </section>
 
@@ -97,14 +111,6 @@
       </ul>
     </footer>
 
-    <!-- js for three dot toggle -->
-    <script>
-      const navToggle = document.getElementById("navToggle");
-      const navMenu = document.getElementById("navMenu");
-
-      navToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("show");
-      });
-    </script>
+    <script src="../JAVASCRIPT/script.js"></script>
   </body>
 </html>
